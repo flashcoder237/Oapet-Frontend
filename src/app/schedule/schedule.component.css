@@ -1,0 +1,54 @@
+.line {
+  background-color: rgb(255, 255, 255);
+  color: rgb(3, 129, 129);
+  width: 100%;
+  text-shadow: 0px 0px 3px rgb(228, 165, 48);
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.conteneur,
+.cellule {
+  min-width: 100%;
+}
+
+.conteneur {
+  background: url("../../assets/dashboad.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(3px 4px 20px silver);
+  padding: 30px;
+}
+
+.cellule {
+  line-height: 60px;
+  border-top: 1px solid rgb(252, 252, 252);
+  color: rgb(0, 0, 0);
+  height: 60px;
+  overflow: hidden;
+}
+
+.colonne {
+  display: inline-block;
+  width: 12%;
+  text-align: center;
+  filter: drop-shadow(0px 0px 3px silver);
+  border: 3px solid white;
+  background-color: rgba(7, 117, 207, 0.486);
+}
+
+.modification {
+  cursor: pointer;
+  position: relative;
+  bottom: +44px;
+  left: +40%;
+  color: ivory;
+}
+
+.bouton {
+  background-color: rgb(3, 86, 107);
+  color: white;
+  filter: drop-shadow(0px 0px 2px silver)
+}

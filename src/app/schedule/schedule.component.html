@@ -1,0 +1,28 @@
+<div>Emploi de temps Numero: wdm397q28</div>
+<button mat-button (click)='Modification()' class="bouton">Modifier</button>
+<div class="conteneur">
+  <div class="colonne colonne-0"><button mat-raised-button class="line">HORAIRES</button>
+    <div class="cellule" *ngFor="let jour of day">
+      <div class="cellule contenu">top</div>
+      <div class="modification"></div>
+    </div>
+  </div>
+  <div class="colonne" *ngFor="let jour of day">
+    <button mat-raised-button class="line line-{{jour.number}}">{{jour.day}}</button>
+    <div class="cellule" *ngFor="let jour of day">
+      <div class="cellule contenu">top</div>
+      <button mat-button [matMenuTriggerFor]="menu" class="modification">
+        <mat-icon *ngIf='modification'>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>check_box</mat-icon>reserver
+        </button>
+        <button mat-menu-item>
+          modifier
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>
+<button mat-button (click)='Modification()' class="bouton">Valier</button>
