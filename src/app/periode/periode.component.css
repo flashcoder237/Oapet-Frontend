@@ -1,0 +1,40 @@
+
+
+.cellule{
+   width: 200px;
+   filter: drop-shadow(0px 0px 1px silver);
+   color: rgb(0, 0, 0);
+   height: 60px;
+   background-color: white;
+   margin: 2px;
+}
+
+.modification{
+  cursor: pointer;
+  position: relative;
+  bottom: +40px;
+  left: +40%;
+  color:rgba(8, 47, 65, 0.767);
+  background-color: rgba(140, 150, 150, 0);
+  box-shadow: 0px 0px 2px silver;
+}
+
+.statut {
+  font-size: 10px;
+}
+
+.icon{
+  font-size: 15px;
+}
+
+.at{
+  color: green;
+}
+
+.pr{
+  color: rgb(45, 8, 211);
+}
+
+.bl{
+  color: red;
+}

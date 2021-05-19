@@ -12,7 +12,7 @@ export class ScheduleComponent implements OnInit {
     {
       day: 'Lundi',
       number: 1,
-      period: new Period('8h-10', 'Dr TCHOUPE MAURICE', 'iNF223')
+ //     period: new Period('8h-10', 'Dr TCHOUPE MAURICE', 'iNF223')
     }, {
       day: 'Mardi',
       number: 2,
@@ -41,18 +41,6 @@ export class ScheduleComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-}
-
-export class Period{
-  public time: string;
-  public nameTeacher: string;
-  public codeCourse: string;
-  constructor(temps: string, nom: string, codeCourse: string) {
-    this.time = temps;
-    this.nameTeacher = nom;
-    this.codeCourse = codeCourse;
   }
 
 }

@@ -23,11 +23,9 @@
 }
 
 .cellule {
-  line-height: 60px;
   border-top: 1px solid rgb(252, 252, 252);
   color: rgb(0, 0, 0);
   height: 60px;
-  overflow: hidden;
 }
 
 .colonne {

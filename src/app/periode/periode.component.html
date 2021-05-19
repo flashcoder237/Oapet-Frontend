@@ -1,1 +1,33 @@
-<p>periode works!</p>
+<div class="cellule" *ngFor="let period of periodes">
+      <div class="contenu">INF <br> 
+        <span *ngIf="period.statut === '1'" class="statut">attente
+        <span class="icon">
+          <br><mat-icon [inline]="true" class="at">add_circle</mat-icon>
+        </span>
+        </span>
+        <span *ngIf="period.statut === '2'" class="statut">proposé
+         <span class="icon">
+        <br><mat-icon [inline]="true" class="icon pr">lock</mat-icon>
+        </span>
+        </span>
+        <span *ngIf="period.statut === '3'" class="statut">bloqué
+         <span class="icon">
+        <br><mat-icon [inline]="true" class="icon bl">lock</mat-icon>
+        </span>
+        </span>
+      </div>
+      <button mat-mini-fab [matMenuTriggerFor]="menu" class="modification">
+        <mat-icon *ngIf='modification'>more_vert</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click) = 'period.statut = "2"'>
+          reserver
+        </button>
+         <button mat-menu-item (click) = 'period.statut = "1"'>
+          annuler
+        </button>
+         <button mat-menu-item (click) = 'period.statut = "3"'>
+         blocker
+        </button>
+      </mat-menu>
+</div>
